@@ -9,10 +9,16 @@
         
     </head>
     <body>
+        <header>
+            <h1>Calculator</h1>
+        </header>
         <main>
             <div id="container">
                 <div id="results-display">
+                    <p id="prev-ans"></p>
+        
                     <p id="results" ></p>
+                
                 </div>
                 
                 <!--the onclick is to call the function once we click the button-->
@@ -33,9 +39,11 @@
                 
                 <button class="buttons" onclick="dlt()">Delete</button>
                 <button class="buttons" onclick="display('0')">0</button>
-                <button class="buttons" onclick="calculate()">=</button>
+                <button class="buttons" onclick="display('.')">.</button>
                 <button class="buttons" onclick="display(' / ')">/</button>
                 <button class="buttons" id="clear" onclick="clr()">Clear</button>
+                <button class="buttons" id="calculate" onclick="calculate()">=</button>
+                
                 
             </div>
         </main>

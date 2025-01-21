@@ -1,3 +1,9 @@
+/*Style the header*/
+header{
+    margin: 0;
+    height: 0.5vh;;
+}
+/*Style the body*/
 body{
     
     margin: 0;
@@ -8,7 +14,7 @@ body{
 }
 /******editing the calculator or container of all of the items********/
 #container{
-    border: 15px solid rgb(201, 201, 207);
+    border: 15px solid  rgb(201, 201, 207);
     display: flex;
     align-items: center;
     border-radius: 7%;
@@ -25,28 +31,44 @@ body{
 }
 /************** editing the screen************/
 #results-display{
-    padding-left: 20px ;
-    padding-top: 7px;
-    padding-left: 20px ;
-    padding-bottom: 7px;
     display: flex;
     border-radius: 30px;
     background-color: rgb(169, 222, 240);
-    height: 9vh;
-    margin-bottom: 10px;
-    font-size: 30px;
+    height: 12vh;
     grid-column: 1/-1;
-    overflow-x: auto; 
-    overflow-y: hidden; 
     border: 10px solid rgba(109, 194, 233, 0.803);
-    
+    overflow-x: auto; 
+    overflow-y: hidden;
+    flex-direction: column;
     
 }
 
-#results-display:hover{
+/*****style*****/
+#results {
+    font-size: 30px;
+    margin: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+    
+}
+
+/****style****/
+#prev-ans{
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 0;
+    color:#66747d;
+    margin-left: 20px;
+    
+     
+}
+
+/* Hover effect for the display screen*/
+#results-display:hover {
+
     background-color: lightblue;
+  
 }
-
 
 #results-display::-webkit-scrollbar {
     
@@ -60,9 +82,9 @@ body{
     border-radius: 5px; 
 }
 
-/* Style the draggable thumb */
+/* Style the color of the scroll bar*/
 #results-display::-webkit-scrollbar-thumb {
-    background-color: #cdcaca; 
+    background-color: #dfdbdb; 
     border-radius: 5px; 
 }
 
@@ -83,6 +105,7 @@ body{
     gap: 1px; 
     font-size: 35px;
 } 
+/* Hover effect for buttons */
 .buttons:hover {
     background-color: rgba(221, 215, 215, 0.304);
     border-radius: 10px;
@@ -90,7 +113,10 @@ body{
     cursor: pointer;
     transition: 0.2s ease;
 }
-/********** to make the button clear bigger***********/
+/********** to make the button clear and the button calculate bigger***********/
 #clear {
-    grid-column: 1/-1;
+    grid-column: -3/1;
+}
+#calculate {
+    grid-column: -3/-1;
 }
