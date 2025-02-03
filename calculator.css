@@ -1,0 +1,122 @@
+/*Style the header*/
+header{
+    margin: 0;
+    height: 0.5vh;;
+}
+/*Style the body*/
+body{
+    
+    margin: 0;
+    place-items: center;
+    display: grid;
+    min-height: 100vh;
+    background-color: rgb(235, 229, 229);
+}
+/******editing the calculator or container of all of the items********/
+#container{
+    border: 15px solid  rgb(201, 201, 207);
+    display: flex;
+    align-items: center;
+    border-radius: 7%;
+    padding: 20px;
+    width: 30vw;
+    background-color: rgb(236, 236, 236);
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    height: 70vh;
+    justify-content: center;
+    
+
+}
+/************** editing the screen************/
+#results-display{
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(169, 222, 240);
+    height: 12vh;
+    grid-column: 1/-1;
+    border: 10px solid rgba(109, 194, 233, 0.803);
+    overflow-x: auto; 
+    overflow-y: hidden;
+    flex-direction: column;
+    
+}
+
+/*****style*****/
+#results {
+    font-size: 30px;
+    margin: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+    
+}
+
+/****style****/
+#prev-ans{
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 0;
+    color:#66747d;
+    margin-left: 20px;
+    
+     
+}
+
+/* Hover effect for the display screen*/
+#results-display:hover {
+
+    background-color: lightblue;
+  
+}
+
+#results-display::-webkit-scrollbar {
+    
+    height: 10px; /* Height of the horizontal scrollbar */
+    
+}
+
+/* Style the background of the scrollbar */
+#results-display::-webkit-scrollbar-track {
+    background-color: #c2d0e5b9; 
+    border-radius: 5px; 
+}
+
+/* Style the color of the scroll bar*/
+#results-display::-webkit-scrollbar-thumb {
+    background-color: #dfdbdb; 
+    border-radius: 5px; 
+}
+
+/* Hover effect*/
+#results-display::-webkit-scrollbar-thumb:hover {
+    background-color: #a19e9e; /* Darker thumb when hovered */
+}
+
+/********** editing the buttons **********/
+.buttons{
+    
+    /******** using flex to make the buttons organized**********/
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 1px; 
+    font-size: 35px;
+} 
+/* Hover effect for buttons */
+.buttons:hover {
+    background-color: rgba(221, 215, 215, 0.304);
+    border-radius: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+/********** to make the button clear and the button calculate bigger***********/
+#clear {
+    grid-column: -3/1;
+}
+#calculate {
+    grid-column: -3/-1;
+}

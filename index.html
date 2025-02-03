@@ -3,52 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Calculator</title>
-        <!--Link to css-->
+        <title>Landing page</title>
         <link href="style.css" rel='stylesheet'/>
-        
     </head>
     <body>
         <header>
             <h1>Calculator</h1>
         </header>
         <main>
-            <div id="container">
-                <div id="results-display">
-                    <p id="prev-ans"></p>
-        
-                    <p id="results" ></p>
-                
+            <div id="landing-page">
+                <a href="Calculator.html"><h2>Calculator</h2></a>
+                <h2>Description:</h2>
+                <p>This is my project, it is a simple calculator that helps us to make simple equations, it is not perfect,
+                    but I still developing this, it can be useful for the ordinary use.<br> It is useful for caculations like additions, subtractions,
+                    multiplication and division, you can also make multiple calulation.
+                </p>
+                <h2>Development process:</h2>
+                <p>
+                    I developed this project accordingo on what I was needing, at first, I needed to make consecutive calculations, so I did it, I also added the point for the numbers,<br>
+                    I added a section for the previous answer, and I was fixing errors, for example to put many consecutive simbols, I was traying to make it with the less posible errors.
+                </p>
+                <img src="calculator.jpg">
                 </div>
-                
-                <!--the onclick is to call the function once we click the button-->
-                <button class="buttons" onclick="display('1')">1</button>
-                <button class="buttons" onclick="display('2')">2</button>
-                <button class="buttons" onclick="display('3')">3</button>
-                <button class="buttons" onclick="display(' + '), calculate">+</button>
-                
-                <button class="buttons" onclick="display('4')">4</button>
-                <button class="buttons" onclick="display('5')">5</button>
-                <button class="buttons" onclick="display('6')">6</button>
-                <button class="buttons" onclick="display(' - ')" >-</button>
-                
-                <button class="buttons" onclick="display('7')">7</button>
-                <button class="buttons" onclick="display('8')">8</button>
-                <button class="buttons" onclick="display('9')">9</button>
-                <button class="buttons" onclick="display(' x ')">x</button>
-                
-                <button class="buttons" onclick="dlt()">Delete</button>
-                <button class="buttons" onclick="display('0')">0</button>
-                <button class="buttons" onclick="display('.')">.</button>
-                <button class="buttons" onclick="display(' / ')">/</button>
-                <button class="buttons" id="clear" onclick="clr()">Clear</button>
-                <button class="buttons" id="calculate" onclick="calculate()">=</button>
-                
-                
-            </div>
-        </main>
-        
-        <!--Link to javascript-->
-        <script src="script.js"></script>
-    </body>
+            </main>
+        </body>
+
 </html>

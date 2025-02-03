@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <!--Link to css-->
+        <link href="calculator.css" rel='stylesheet'/>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        <main>
+            <div id="container">
+                <div id="results-display">
+                    <p id="prev-ans"></p>
+        
+                    <p id="results" ></p>
+                
+                </div>
+                
+                <!--the onclick is to call the function once we click the button-->
+                <button class="buttons" onclick="display('1')">1</button>
+                <button class="buttons" onclick="display('2')">2</button>
+                <button class="buttons" onclick="display('3')">3</button>
+                <button class="buttons" onclick="display(' + '), calculate">+</button>
+                
+                <button class="buttons" onclick="display('4')">4</button>
+                <button class="buttons" onclick="display('5')">5</button>
+                <button class="buttons" onclick="display('6')">6</button>
+                <button class="buttons" onclick="display(' - ')" >-</button>
+                
+                <button class="buttons" onclick="display('7')">7</button>
+                <button class="buttons" onclick="display('8')">8</button>
+                <button class="buttons" onclick="display('9')">9</button>
+                <button class="buttons" onclick="display(' x ')">x</button>
+                
+                <button class="buttons" onclick="dlt()">Delete</button>
+                <button class="buttons" onclick="display('0')">0</button>
+                <button class="buttons" onclick="display('.')">.</button>
+                <button class="buttons" onclick="display(' / ')">/</button>
+                <button class="buttons" id="clear" onclick="clr()">Clear</button>
+                <button class="buttons" id="calculate" onclick="calculate()">=</button>
+                
+                
+            </div>
+        </main>
+        
+        <!--Link to javascript-->
+        <script src="script.js"></script>
+    </body>
+</html>
